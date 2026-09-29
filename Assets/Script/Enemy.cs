@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    SO_EnemyData enemyData;
+    public SO_EnemyData enemyData;
     IKillableEntity killableEntity;
-    EnemyPath enemyPath;
-    Pool pool;
-    EventManager eventManager;
+    [SerializeField] EnemyPath enemyPath;
+    [SerializeField] Pool pool;
+    [SerializeField] EventManager eventManager;
+
+    private void Start()
+    {
+        StartCoroutine(enemyPath.FollowPath(this));
+    }
 }
