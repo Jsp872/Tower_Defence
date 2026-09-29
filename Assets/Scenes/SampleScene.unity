@@ -182,6 +182,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 832412449}
   - {fileID: 262619039}
+  - {fileID: 832412449}
+  - {fileID: 262619039}
   nexus: {fileID: 0}
 --- !u!4 &364433199
 Transform:

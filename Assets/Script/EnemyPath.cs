@@ -12,8 +12,8 @@ public class EnemyPath : MonoBehaviour
         for (int i = 0; i < waypoints.Count; i++)
         {
             enemy.transform.position = waypoints[i].position;
-            new WaitForSeconds(enemy.enemyData.speed);
+            Debug.Log(enemy.enemyData.speed);
+            yield return new WaitForSeconds(enemy.enemyData.speed);
         }
-        yield return null;
     }
 }
