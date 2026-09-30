@@ -31,7 +31,5 @@ public class EnemyPath : MonoBehaviour
         }
 
         Destroy(enemy.gameObject);
-        Debug.Log("Enemy reached the Nexus!");
-
     }
 }
